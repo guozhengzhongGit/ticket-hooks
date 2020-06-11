@@ -1,0 +1,105 @@
+.citySelector {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  min-height: 100%;
+  z-index: 99;
+  background: #fff;
+  .citySearch {
+    line-height: 40px;
+    background: #1ba9ba;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    .searchBack {
+      font-size: 22px;
+      width: 22px;
+      padding-left: 5px;
+    }
+    .searchInputWrapper {
+      height: 30px;
+      font-size: 12px;
+      border-radius: 5px;
+      padding-left: 5px;
+      margin: 0 0 0 10px;
+      background: #fff;
+      flex: 1;
+      .searchInput {
+        border: 0;
+        outline: 0;
+        display: block;
+        box-sizing: border-box;
+        width: 80%;
+        height: 100%;
+        color: #333;
+        line-height: 1.5;
+        vertical-align: top;
+      }
+    }
+    .searchClean {
+      text-align: center;
+      font-size: 22px;
+      width: 30px;
+    }
+    .searchCleanHidden {
+      text-align: center;
+      font-size: 22px;
+      width: 30px;
+      visibility: hidden;
+    }
+  }
+  .cityList {
+    .cityCate {
+      .cityUl {
+        .cityTitle {
+          line-height: 30px;
+          background-color: #f2f8fb;
+          padding: 0 15px;
+          font-size: 12px;
+        }
+        .cityItem {
+          font-size: 14px;
+          padding-left: 25px;
+          line-height: 36px;
+          border-bottom: 1px solid #e3e6e9;
+        }
+      }
+    }
+    .cityIndex {
+      width: 30px;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      text-align: center;
+      right: 0;
+      top: 50px;
+      bottom: 30px;
+      .cityIndexItem {
+        flex: 1;
+        color: #1ba9ba;
+        font-size: 12px;
+      }
+    }
+  }
+  .citySuggest {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    bottom: 0;
+    width: 100vw;
+    z-index: 100;
+    background: #fff;
+    font-size: 14px;
+    .citySuggestUl {
+      .citySuggestLi {
+        padding: 5px 0 5px 15px;
+        border-bottom: 1px solid #e3e6e9;
+      }
+    }
+  }
+}
+.citySelectorHidden {
+  display: none;
+}
